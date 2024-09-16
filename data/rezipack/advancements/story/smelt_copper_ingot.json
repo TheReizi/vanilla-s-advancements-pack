@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:copper_ingot"
+        },
+        "title": {"translate": "And why is it needed?"},
+        "description": {"color": "green","translate": "Smelt a copper ingot and think carefully about why you need it"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/mine_copper_ore",
+    "criteria": {
+        "copper_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:copper_ingot"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

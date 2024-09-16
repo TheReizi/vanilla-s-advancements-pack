@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:raw_gold"
+        },
+        "title": {"translate": "Does it look like cheese?"},
+        "description": {"color": "green","translate": "Get a piece of yellow cheese"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/iron_tools",
+    "criteria": {
+        "raw_gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:raw_gold"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:mossy_cobblestone"
+        },
+        "title": {"translate": "Echoes of the past"},
+        "description": {"color": "dark_purple","translate": "Find an ancient, forgotten pyramid, where at one time dinosaurs probably ran"},
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "rezipack:adventure/find_any_jungle",
+    "criteria": {
+        "jungle_pyramid": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "location": {
+                                        "biome": "minecraft:bamboo_jungle",
+                                        "structure": "minecraft:jungle_pyramid"
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "location": {
+                                        "biome": "minecraft:jungle",
+                                        "structure": "minecraft:jungle_pyramid"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type_specific": {
+                                    "type": "player",
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:potato"
+        },
+        "title": {"translate": "The taste of Belarusian potatoes"},
+        "description": {"color": "green","translate": "Eat real potatoes, from such a beautiful country as Belarus (The author of the datapack is not Belarusian)"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/plant_seed",
+    "criteria": {
+        "potato": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:potato"
+                    ]
+                }
+            }
+        }
+    }
+}

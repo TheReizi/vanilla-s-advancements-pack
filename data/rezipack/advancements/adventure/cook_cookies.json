@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cookie"
+        },
+        "title": {"translate": "Crispy, tasty, with a hint of chocolate"},
+        "description": {"color": "green","translate": "Prepare the joy of every child"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:adventure/find_cocoa_beans",
+    "criteria": {
+        "cookie": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cookie"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

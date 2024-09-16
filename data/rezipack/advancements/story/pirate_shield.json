@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+            "nbt": "{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:sku}]}}"
+        },
+        "title": {"color": "black", "translate": "Real Pirates Shield"},
+        "description": {"color": "dark_purple", "translate": "Create a shield that real pirates fought with"},
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "rezipack:story/colorful_shield",
+    "criteria": {
+        "shield": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:shield"
+                        ],
+                        "nbt": "{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:sku}]}}"
+                    }
+                ]
+            }
+        }
+    }
+}

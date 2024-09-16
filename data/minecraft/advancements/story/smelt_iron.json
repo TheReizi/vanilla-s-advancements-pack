@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "title": {"translate": "Acquire Hardwave"},
+        "description": {"color": "green","translate": "Smelt an Iron Ingot"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/create_furnace",
+    "criteria": {
+        "iron_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "iron_ingot"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

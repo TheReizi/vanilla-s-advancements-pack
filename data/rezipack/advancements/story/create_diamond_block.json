@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_block"
+        },
+        "title": {"translate": "You are rich!"},
+        "description": {"color": "green","translate": "Create a diamond block by confirming your status"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/mine_diamond",
+    "criteria": {
+        "diamond_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diamond_block"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

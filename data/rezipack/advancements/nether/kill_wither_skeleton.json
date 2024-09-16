@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_sword"
+        },
+        "title": {"translate": "Black Lives Matter"},
+        "description": {"color": "green", "translate": "Kill the BLACK Underworld Guardian"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:nether/find_fortress",
+    "criteria": {
+        "wither_skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither_skeleton"
+                }
+            }
+        }
+    }
+}

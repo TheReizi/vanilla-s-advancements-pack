@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "title": {"translate": "Ancient Debris (Mini)"},
+        "description": {"color": "green","translate": "Smelt a Ancient Debris and fall into confusion as to why such a huge fragment produced such a small scrap"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:nether/obtain_ancient_debris",
+    "criteria": {
+        "netherite_scrap": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:netherite_scrap"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

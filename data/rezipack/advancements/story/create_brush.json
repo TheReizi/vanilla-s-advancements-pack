@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brush"
+        },
+        "title": {"translate": "Just like a Explorer"},
+        "description": {"color": "green","translate": "Now you can search for buried treasures"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/smelt_copper_ingot",
+    "criteria": {
+        "brush": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:brush"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:melon_slice"
+        },
+        "title": {"translate": "Green, square, striped"},
+        "description": {"color": "green","translate": "Cut a huge striped juicy watermelon and enjoy its taste"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:adventure/find_any_jungle",
+    "criteria": {
+        "melon_slice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:melon_slice"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

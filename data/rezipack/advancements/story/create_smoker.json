@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:smoker"
+        },
+        "title": {"translate": "Smoked foods!!!"},
+        "description": {"color": "green","translate": "Create a smoker to experience a new taste of smoked food"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/create_furnace",
+    "criteria": {
+        "smoker": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:smoker"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

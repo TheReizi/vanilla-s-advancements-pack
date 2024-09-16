@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:coal"
+        },
+        "title": {"translate": "The most traditional fuel"},
+        "description": {"color": "green","translate": "Mine coal. Gotta start somewhere"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/mine_stone",
+    "criteria": {
+        "coal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:coal"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

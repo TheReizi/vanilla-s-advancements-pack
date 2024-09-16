@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "title": {"translate": "It's time to be enchant!"},
+        "description": {"color": "green","translate": "These aren't diamonds, but they're good too"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/upgrade_tools",
+    "criteria": {
+        "lapis_lazuli": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "lapis_lazuli"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

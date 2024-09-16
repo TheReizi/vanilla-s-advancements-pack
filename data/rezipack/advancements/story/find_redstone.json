@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone"
+        },
+        "title": {"translate": "Hooray! Mechanisms"},
+        "description": {"color": "green","translate": "Find red sand"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/iron_tools",
+    "criteria": {
+        "redstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:redstone"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

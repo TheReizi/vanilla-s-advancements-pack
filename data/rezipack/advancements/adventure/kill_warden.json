@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sculk_catalyst"
+        },
+        "title": {"translate": "The Strongest!"},
+        "description": {"color": "dark_purple","translate": "Win Warden"},
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "minecraft:adventure/kill_mob_near_sculk_catalyst",
+    "criteria": {
+        "warden": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:warden"
+                }
+            }
+        }
+    }
+}

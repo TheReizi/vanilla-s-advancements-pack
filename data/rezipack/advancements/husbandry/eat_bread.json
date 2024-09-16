@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bread"
+        },
+        "title": {"translate": "Bread around the head"},
+        "description": {"color": "green","translate": "Eat bread"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/plant_seed",
+    "criteria": {
+        "bread": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:bread"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_axe"
+        },
+        "title": {"translate": "Only 1 brutal left"},
+        "description": {"color": "dark_purple", "translate": "Win Chief Piglin"},
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "minecraft:nether/find_bastion",
+    "criteria": {
+        "piglin_brute": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:piglin_brute"
+                }
+            }
+        }
+    }
+}

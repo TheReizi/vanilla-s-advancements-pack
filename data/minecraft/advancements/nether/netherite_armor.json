@@ -1,0 +1,62 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherite_chestplate"
+		},
+		"title": {"translate":"Cover Me in Debris"},
+		"description": {"color":"dark_purple","translate":"Get a full suit of Netherite armor"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "rezipack:nether/create_netherite_armor",			
+	"criteria": {
+		"netherite_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_helmet"
+						]
+					}
+				]
+			}
+		},
+		"netherite_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_chestplate"
+						]
+					}
+				]
+			}
+		},
+		"netherite_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_leggings"
+						]
+					}
+				]
+			}
+		},
+		"netherite_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_boots"
+						]
+					}
+				]
+			}
+		}
+	}
+}

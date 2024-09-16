@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		"title": {"translate":"Spooky Scary Skeleton"},
+		"description": {"color":"green","translate":"Obtain a Wither Skeleton's skull"},
+		"announce_to_chat": "true"
+	},
+	"parent": "rezipack:nether/kill_wither_skeleton",
+	"criteria": {
+		"wither_skull": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:wither_skeleton_skull"
+						]
+					}
+				]
+			}
+		}
+	}
+}

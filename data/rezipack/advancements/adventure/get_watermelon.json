@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:melon"
+        },
+        "title": {"translate": "Striped cube"},
+        "description": {"color": "green","translate": "Collect the watermelon piece by piece or using silk touch"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:adventure/cut_watermelon",
+    "criteria": {
+        "melon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:melon"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

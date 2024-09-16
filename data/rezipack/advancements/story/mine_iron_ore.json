@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:raw_iron"
+        },
+        "title": {"translate": "How can you get an ingot from this?"},
+        "description": {"color": "green","translate": "Mine Iron Ore"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/upgrade_tools",
+    "criteria": {
+        "raw_iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "raw_iron"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

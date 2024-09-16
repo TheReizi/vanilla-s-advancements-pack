@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:trident"
+        },
+        "title": {"translate": "The transformation was successful!"},
+        "description": {"color": "green","translate": "Strike the poor pig with lightning"}
+    },
+    "parent": "minecraft:adventure/throw_trident",
+    "criteria": {
+        "trident": {
+            "trigger": "minecraft:channeled_lightning",
+            "conditions": {
+                "victims":[
+                    {
+                        "type":"minecraft:pig"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_chestplate"
+        },
+        "title": {"translate": "Now can visit Piglins"},
+        "description": {"color": "green","translate": "Create a golden armor"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/smelt_gold_ingot",
+    "criteria": {
+        "golden_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:golden_helmet"
+                        ]
+                    }
+                ]
+            }
+        },
+        "golden_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:golden_chestplate"
+                        ]
+                    }
+                ]
+            }
+        },
+        "golden_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:golden_leggings"
+                        ]
+                    }
+                ]
+            }
+        },
+        "golden_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:golden_boots"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+	"requirements": [
+		[
+			"golden_helmet",
+			"golden_chestplate",
+			"golden_leggings",
+			"golden_boots"
+		]
+	]
+}

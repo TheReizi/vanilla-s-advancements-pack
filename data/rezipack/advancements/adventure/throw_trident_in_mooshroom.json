@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:trident"
+        },
+        "title": {"translate": "AutoColor Change"},
+        "description": {"color": "green","translate": "Strike a pure mooshroom with lightning"}
+    },
+    "parent": "minecraft:adventure/throw_trident",
+    "criteria": {
+        "trident": {
+            "trigger": "minecraft:channeled_lightning",
+            "conditions": {
+                "victims": [
+                    {
+                        "type": "minecraft:mooshroom"
+                    }
+                ]
+            }
+        }
+    }
+}

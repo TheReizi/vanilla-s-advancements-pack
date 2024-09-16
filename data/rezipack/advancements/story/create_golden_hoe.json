@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_hoe"
+        },
+        "title": {"translate": "Most Useless Attachment"},
+        "description": {"color": "green","translate": "Create a golden HOE and reimagine your life"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/smelt_gold_ingot",
+    "criteria": {
+        "golden_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:golden_hoe"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

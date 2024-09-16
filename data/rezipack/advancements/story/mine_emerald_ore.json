@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": {"translate": "Green Diamond"},
+        "description": {"color": "green","translate": "Mine Green Diamond (I forgot what it's called)"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/iron_tools",
+    "criteria": {
+        "emerald": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:emerald"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "title": {"translate": "The Best metal for the Best seeker"},
+        "description": {"color": "green","translate": "Create the strongest and best metal in the world"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:nether/smelt_netherite_scrap",
+    "criteria": {
+        "netherite_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:netherite_ingot"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

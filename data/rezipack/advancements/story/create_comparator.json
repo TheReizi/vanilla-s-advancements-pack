@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:comparator"
+        },
+        "title": {"translate": "Analogue to a transistor"},
+        "description": {"color": "green", "translate": "Create a comparator"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/find_redstone",
+    "criteria": {
+        "comparator": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:comparator"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

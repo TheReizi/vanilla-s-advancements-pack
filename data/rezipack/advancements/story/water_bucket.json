@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:water_bucket"
+        },
+        "title": {"translate": "Orni"},
+        "description": {"color": "green","translate": "Fill the bucket with water"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/smelt_iron",
+    "criteria": {
+        "water_bucket": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:water_bucket"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

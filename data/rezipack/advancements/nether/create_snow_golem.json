@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carved_pumpkin"
+        },
+        "title": {"translate": "Hot snow"},
+        "description": {"color": "green","translate": "Create a snow golem in nether. (For what?..)"},
+        "frame": "goal",
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:nether/root",
+    "criteria": {
+        "snow_golem": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:snow_golem",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+                }
+            }
+        }
+    }
+}

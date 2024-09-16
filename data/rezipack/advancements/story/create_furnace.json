@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace"
+        },
+        "title": {"translate": "Still looks like the stone age"},
+        "description": {"color": "green","translate": "Make a regular stone oven"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/mine_iron_ore",
+    "criteria": {
+        "furnace": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:furnace"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

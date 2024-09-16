@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:parrot_spawn_egg"
+        },
+        "title": {"translate": "All that remains is to find an eye patch"},
+        "description": {"color": "green", "translate": "Tame a parrot that can sit on your shoulder"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:adventure/find_any_jungle",
+    "criteria": {
+        "parrot": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:parrot"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spyglass"
+        },
+        "title": {"translate": "Just like a Pirate"},
+        "description": {"color": "green","translate": "Now you can search for treasure"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/smelt_copper_ingot",
+    "criteria": {
+        "spyglass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:spyglass"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

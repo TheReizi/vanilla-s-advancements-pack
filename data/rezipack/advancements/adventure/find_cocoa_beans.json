@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cocoa_beans"
+        },
+        "title": {"translate": "Are these beans used to make cocoa???"},
+        "description": {"color": "green","translate": "Find cocoa beans on one of the tropical trees"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:adventure/find_any_jungle",
+    "criteria": {
+        "cocoa_beans": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cocoa_beans"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

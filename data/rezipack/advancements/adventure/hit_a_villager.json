@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": {"translate": "No discounts for you! >:("},
+        "description": {"color": "green","translate": "Hit a villager and catch his disapproving gaze"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:adventure/trade",
+    "criteria": {
+        "villager": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager"
+                }
+            }
+        }
+    }
+}

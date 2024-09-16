@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:repeater"
+        },
+        "title": {"translate": "Infinite Engine"},
+        "description": {"color": "green", "translate": "Create a repeater-Create a repeater-Create a repeater"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/find_redstone",
+    "criteria": {
+        "repeater": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:repeater"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

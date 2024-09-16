@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": {"translate": "12 kilograms of pure gold"},
+        "description": {"color": "green","translate": "How do you even carry this in your pockets?!?!"},
+        "announce_to_chat": true
+    },
+    "parent": "rezipack:story/mine_golden_ore",
+    "criteria": {
+        "gold_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:gold_ingot"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

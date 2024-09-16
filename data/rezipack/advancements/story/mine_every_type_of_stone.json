@@ -1,0 +1,122 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cobbled_deepslate"
+        },
+        "title": {"translate": "Stone Connoisseur"},
+        "description": {"color": "green","translate": "Mine every type of stone and discover how many there actually are"},
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "minecraft:story/mine_stone",
+    "criteria": {
+        "mossy_cobblestone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:mossy_cobblestone"
+                        ]
+                    }
+                ]
+            }
+        },
+        "cobblestone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cobblestone"
+                        ]
+                    }
+                ]
+            }
+        },
+        "calcite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:calcite"
+                        ]
+                    }
+                ]
+            }
+        },
+        "granite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:granite"
+                        ]
+                    }
+                ]
+            }
+        },
+        "diorite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:diorite"
+                        ]
+                    }
+                ]
+            }
+        },
+        "andesite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:andesite"
+                        ]
+                    }
+                ]
+            }
+        },
+        "cobbled_deepslate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cobbled_deepslate"
+                        ]
+                    }
+                ]
+            }
+        },
+        "tuff": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:tuff"
+                        ]
+                    }
+                ]
+            }
+        },
+        "dripstone_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:dripstone_block"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

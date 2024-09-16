@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+            "nbt": "{BlockEntityTag:{Base:5,Patterns:[{Color:15,Pattern:cre}]}}"
+        },
+        "title": {"color": "dark_green", "translate": "AAAAAAA!!!!! CREEPEEEEER!!!!"},
+        "description": {"color": "dark_purple", "translate": "Create a shield with a creeper's face. It's enough to scare a friend"},
+        "announce_to_chat": true,
+        "frame": "challenge"
+    },
+    "parent": "rezipack:story/colorful_shield",
+    "criteria": {
+        "shield": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:shield"
+                        ],
+                        "nbt": "{BlockEntityTag:{Base:5,Patterns:[{Color:15,Pattern:cre}]}}"
+                    }
+                ]
+            }
+        }
+    }
+}

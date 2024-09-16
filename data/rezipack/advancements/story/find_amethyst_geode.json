@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:budding_amethyst"
+        },
+        "title": {"translate": "Amethyst Dome"},
+        "description": {"color": "green","translate": "Find Amethyst Geode"},
+        "announce_to_chat": true
+    },
+    "parent": "minecraft:story/upgrade_tools",
+    "criteria": {
+        "budding_amethyst": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:any_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "predicate": {
+                                    "enter_block": {
+                                        "block": "budding_amethyst"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
